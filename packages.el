@@ -5,6 +5,12 @@
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 
+;;; Code:
+(package! cider)
+;; (package! cider-nrepl)
+(after! smartparens
+  (smartparens-global-mode -1))
+
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
